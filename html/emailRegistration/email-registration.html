@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Registration</title>
+    <link rel="stylesheet" type="text/css" href="style-e.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup">
+        <div class="signup--form">
+            <h1 id="h1-registration">Sign Up</h1>
+            <form id="form" >
+                <div class="input-wrap">
+                    <input type="text" placeholder="First Name" id="first-name"/>
+                    <span id="first-n-succ" class="successfully-symbol-hide" style='font-size:25px'>&#10004;</span>
+                    <span id="first-n-err" class="error-symbol" style='font-size:25px'>&#10008;</span> 
+                </div>
+                <div id="fn-error-message" class="error-message"><p style="color:red">Error: empty input field!</p></div>
+                <div class="input-wrap">
+                    <input type="text" placeholder="Last Name" id="last-name" />
+                    <span id="last-n-succ" class="successfully-symbol-hide" style='font-size:25px'>&#10004;</span>
+                    <span id="last-n-err" class="error-symbol" style='font-size:25px'>&#10008;</span>
+                </div>
+                <div id="ln-error-message" class="error-message"><p style="color:red">Error: empty input field!</p></div>
+                <div class="input-wrap">
+                    <input type="search" placeholder="Email" id="email" />
+                    <span id="email-succ" class="successfully-symbol-hide" style='font-size:25px'>&#10004;</span>
+                    <span id="email-err" class="error-symbol" style='font-size:25px'>&#10008;</span>
+                </div>
+                <div id="email-error-message" class="error-message"><p id="email-error-p" style="color:red">Error: empty input field!</p></div>
+                <div class="input-wrap">
+                    <input type="password" placeholder="Password" id="password" />
+                    <span id="password-succ" class="successfully-symbol-hide" style='font-size:25px'>&#10004;</span>
+                    <span id="password-err" class="error-symbol" style='font-size:25px'>&#10008;</span>
+                </div>
+                <div id="password-message" class="error-message"><p style="color:red">Error: empty input field!</p></div>
+                <div class="input-wrap">
+                    <input type="password" placeholder="Confirm Your Password" id="password2" />
+                    <span id="password2-succ" class="successfully-symbol-hide" style='font-size:25px'>&#10004;</span>
+                    <span id="password2-err" class="error-symbol" style='font-size:25px'>&#10008;</span>
+                </div>
+                <div id="password2-message" class="error-message"><p style="color:red">The Password does not match!</p></div>
+                <div class="input-wrap">
+                    <input id="input-terms" type="checkbox" value="terms" />
+                <p>Accept the <span class="terms-condition">Terms and Conditions</span></p>
+                </div>
+                <div id="terms-message" class="error-message"><p style="color:red">You need to accept terms and conditions</p></div>
+                <div class="input-wrap">
+                    <input type="checkbox" />
+                <p>Subscribe to our newsletter</p>
+                </div>
+                <div class="btn">
+                    <button type="submit">Sing Up</button>
+                </div>  
+            </form> 
+        </div>
+    </div>
+    <div id="spinner" class="lds-facebook spinner-remove"><div></div><div></div><div></div></div>
+    <script src="logic.js"></script>
+</body>
+</html>
